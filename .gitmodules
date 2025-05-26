@@ -1,0 +1,12 @@
+[submodule "AlertHaven-IoT"]
+	path = AlertHaven-IoT
+	url = https://github.com/vitorvhsilva/AlertHaven-IoT
+[submodule "AlertHaven-Java"]
+	path = AlertHaven-Java
+	url = https://github.com/vitorvhsilva/AlertHaven-Java
+[submodule "AlertHaven-dotNet"]
+	path = AlertHaven-dotNet
+	url = https://github.com/vitorvhsilva/AlertHaven-dotNet
+[submodule "AlertHaven-ReactNative"]
+	path = AlertHaven-ReactNative
+	url = https://github.com/vitorvhsilva/AlertHaven-ReactNative
