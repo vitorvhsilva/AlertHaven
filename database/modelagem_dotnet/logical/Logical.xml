@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="80C63B93-1AED-AD9C-1241-DE4E5E72F12E" mainViewID="A28DB698-12A8-B73A-B88D-6664BB7E3D9E">
+<createdBy>vitor</createdBy>
+<createdTime>2025-05-26 23:23:24 UTC</createdTime>
+<ownerDesignName>modelagem_dotnet</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

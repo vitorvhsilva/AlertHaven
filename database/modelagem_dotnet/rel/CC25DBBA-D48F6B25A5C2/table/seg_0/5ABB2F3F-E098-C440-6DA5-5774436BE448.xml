@@ -1,0 +1,81 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5ABB2F3F-E098-C440-6DA5-5774436BE448" name="TB_IOT">
+<createdBy>vitor</createdBy>
+<createdTime>2025-05-26 23:35:44 UTC</createdTime>
+<ownerDesignName>modelagem_dotnet</ownerDesignName>
+<ordsAlias>table_2</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_iot" id="F5ABD258-5A0E-059B-53C2-418E5A32211B">
+<createdBy>vitor</createdBy>
+<createdTime>2025-05-26 23:40:46 UTC</createdTime>
+<ownerDesignName>modelagem_dotnet</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipo_iot" id="7728EE24-146E-2E19-1D49-9F3701B2D802">
+<createdBy>vitor</createdBy>
+<createdTime>2025-05-26 23:41:07 UTC</createdTime>
+<ownerDesignName>modelagem_dotnet</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="localizacao_iot" id="52F1EACA-06EB-9B86-2EE9-82E7C2E649A4">
+<createdBy>vitor</createdBy>
+<createdTime>2025-05-26 23:41:22 UTC</createdTime>
+<ownerDesignName>modelagem_dotnet</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ultima_leitura_iot" id="062FF67E-C56B-1EA1-2FD8-8DACB28568C4">
+<createdBy>vitor</createdBy>
+<createdTime>2025-05-26 23:43:04 UTC</createdTime>
+<ownerDesignName>modelagem_dotnet</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="status_iot" id="2D06F50E-90BC-691A-2777-B4805FAAE0C4">
+<createdBy>vitor</createdBy>
+<createdTime>2025-05-26 23:43:34 UTC</createdTime>
+<ownerDesignName>modelagem_dotnet</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="44EFE7B7-3365-3574-AAD1-6AF87F7A4901" name="tb_iot_id_iot_pk">
+<createdBy>vitor</createdBy>
+<createdTime>2025-05-26 23:40:46 UTC</createdTime>
+<ownerDesignName>modelagem_dotnet</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F5ABD258-5A0E-059B-53C2-418E5A32211B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

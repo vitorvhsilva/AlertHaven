@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="modelagem_dotnet" id="6040F319-F8B9-A00C-8918-AB328370107B" version="3.5">
+<createdBy>vitor</createdBy>
+<createdTime>2025-05-26 23:23:23 UTC</createdTime>
+<ownerDesignName>modelagem_dotnet</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>6040F319-F8B9-A00C-8918-AB328370107B</designId>
+</OSDM_Design>

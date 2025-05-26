@@ -1,0 +1,128 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CCC11A22-E060-7F3D-8C4C-2DCB48487675" name="TB_EVENTO">
+<createdBy>vitor</createdBy>
+<createdTime>2025-05-26 23:43:44 UTC</createdTime>
+<ownerDesignName>modelagem_dotnet</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_evento" id="5C561A5B-15CE-44E3-501C-0333F02A3840">
+<createdBy>vitor</createdBy>
+<createdTime>2025-05-26 23:44:10 UTC</createdTime>
+<ownerDesignName>modelagem_dotnet</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipo_evento" id="C8FF65FF-41AD-9526-F33A-044A646C924E">
+<createdBy>vitor</createdBy>
+<createdTime>2025-05-26 23:44:24 UTC</createdTime>
+<ownerDesignName>modelagem_dotnet</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="intensidade_evento" id="48A3A635-5512-9AA0-AE1E-EB98334CBAC2">
+<createdBy>vitor</createdBy>
+<createdTime>2025-05-26 23:44:35 UTC</createdTime>
+<ownerDesignName>modelagem_dotnet</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="latitude_evento" id="D5BEA975-649B-254D-A081-1EA68482CA58">
+<createdBy>vitor</createdBy>
+<createdTime>2025-05-26 23:45:23 UTC</createdTime>
+<ownerDesignName>modelagem_dotnet</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="longitude_evento" id="F3EB5FAB-008A-FAA3-33A9-81BC01B11A5D">
+<createdBy>vitor</createdBy>
+<createdTime>2025-05-26 23:45:34 UTC</createdTime>
+<ownerDesignName>modelagem_dotnet</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_hora_evento" id="596ACD79-A5CF-4586-DD4D-98D9A536690A">
+<createdBy>vitor</createdBy>
+<createdTime>2025-05-26 23:45:04 UTC</createdTime>
+<ownerDesignName>modelagem_dotnet</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>91229484-D19C-D458-8647-333C7FFE7B60</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tamanho_evento" id="CAAFD8F6-A046-620F-FF74-DF89103023D4">
+<createdBy>vitor</createdBy>
+<createdTime>2025-05-26 23:50:25 UTC</createdTime>
+<ownerDesignName>modelagem_dotnet</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_iot" id="35072D38-6B9A-6630-C5A8-49E8DEF2E299">
+<createdBy>vitor</createdBy>
+<createdTime>2025-05-26 23:53:02 UTC</createdTime>
+<ownerDesignName>modelagem_dotnet</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9B87EBC6-0F13-6692-32DD-875F0B6708FA" referredColumn="F5ABD258-5A0E-059B-53C2-418E5A32211B"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0847AF8F-51B4-39D0-FCBF-74D5BFCA80CF" name="tb_evento_id_evento_pk">
+<createdBy>vitor</createdBy>
+<createdTime>2025-05-26 23:44:10 UTC</createdTime>
+<ownerDesignName>modelagem_dotnet</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5C561A5B-15CE-44E3-501C-0333F02A3840"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3C3479BF-339D-F01F-68E8-F209CD10B1FA" name="tb_evento_id_iot_fk">
+<createdBy>vitor</createdBy>
+<createdTime>2025-05-26 23:53:02 UTC</createdTime>
+<ownerDesignName>modelagem_dotnet</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="35072D38-6B9A-6630-C5A8-49E8DEF2E299"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

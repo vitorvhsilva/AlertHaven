@@ -1,0 +1,95 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A1BC11BC-F6F9-29ED-0F18-F2F34B547A8D" name="TB_ALERTA">
+<createdBy>vitor</createdBy>
+<createdTime>2025-05-26 23:45:55 UTC</createdTime>
+<ownerDesignName>modelagem_dotnet</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_alerta" id="544E88E0-4ECA-E713-10BD-F98807B8F313">
+<createdBy>vitor</createdBy>
+<createdTime>2025-05-26 23:46:32 UTC</createdTime>
+<ownerDesignName>modelagem_dotnet</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nivel_alerta" id="B8716E68-FAB2-762A-6542-BD51EDB27DD0">
+<createdBy>vitor</createdBy>
+<createdTime>2025-05-26 23:51:09 UTC</createdTime>
+<ownerDesignName>modelagem_dotnet</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="mensagem_alerta" id="462DDF82-99EA-2E6F-A6BF-37B099C0B212">
+<createdBy>vitor</createdBy>
+<createdTime>2025-05-26 23:51:18 UTC</createdTime>
+<ownerDesignName>modelagem_dotnet</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_hora_alerta" id="FC65D87C-7AB9-EF8F-7ACE-F8835CF46113">
+<createdBy>vitor</createdBy>
+<createdTime>2025-05-26 23:51:34 UTC</createdTime>
+<ownerDesignName>modelagem_dotnet</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>91229484-D19C-D458-8647-333C7FFE7B60</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_evento" id="43824F4A-1438-3AD8-2F68-5C36A968BD3E">
+<createdBy>vitor</createdBy>
+<createdTime>2025-05-26 23:53:30 UTC</createdTime>
+<ownerDesignName>modelagem_dotnet</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="98AEAD3B-D56E-481B-0CD2-283125D64CFC" referredColumn="5C561A5B-15CE-44E3-501C-0333F02A3840"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="73508CEF-61C2-4BBE-3BF4-2770E57F1887" name="tb_alerta_id_alerta_pk">
+<createdBy>vitor</createdBy>
+<createdTime>2025-05-26 23:46:33 UTC</createdTime>
+<ownerDesignName>modelagem_dotnet</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="544E88E0-4ECA-E713-10BD-F98807B8F313"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AC71743D-1664-030F-9B2C-E4DE0035B0EE" name="tb_alerta_id_evento_fk">
+<createdBy>vitor</createdBy>
+<createdTime>2025-05-26 23:53:30 UTC</createdTime>
+<ownerDesignName>modelagem_dotnet</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="43824F4A-1438-3AD8-2F68-5C36A968BD3E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
