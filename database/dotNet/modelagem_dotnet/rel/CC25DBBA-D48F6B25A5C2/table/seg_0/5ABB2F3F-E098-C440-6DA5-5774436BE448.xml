@@ -52,6 +52,17 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="unidade_medida_iot" id="28F09ACD-F056-2901-7283-49EA7EB1FB5F">
+<createdBy>vitor</createdBy>
+<createdTime>2025-05-27 02:21:56 UTC</createdTime>
+<ownerDesignName>modelagem_dotnet</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="status_iot" id="2D06F50E-90BC-691A-2777-B4805FAAE0C4">
 <createdBy>vitor</createdBy>
 <createdTime>2025-05-26 23:43:34 UTC</createdTime>
