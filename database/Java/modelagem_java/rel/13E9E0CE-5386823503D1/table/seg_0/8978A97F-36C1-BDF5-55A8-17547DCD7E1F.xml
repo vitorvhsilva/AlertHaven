@@ -1,0 +1,112 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8978A97F-36C1-BDF5-55A8-17547DCD7E1F" name="TB_USUARIO">
+<createdBy>vitor</createdBy>
+<createdTime>2025-05-27 00:03:17 UTC</createdTime>
+<ownerDesignName>modelagem_java</ownerDesignName>
+<ordsAlias>table_6</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_usuario" id="74A4BBF3-979F-FB93-0B5F-3CDC86010597">
+<createdBy>vitor</createdBy>
+<createdTime>2025-05-27 00:06:19 UTC</createdTime>
+<ownerDesignName>modelagem_java</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nome_usuario" id="D422E4B8-D4A4-8A17-8AB9-20D8BFD16923">
+<createdBy>vitor</createdBy>
+<createdTime>2025-05-27 00:06:28 UTC</createdTime>
+<ownerDesignName>modelagem_java</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email_usuario" id="DB16CFFB-209F-2773-E9A4-CBAE60E0B26A">
+<createdBy>vitor</createdBy>
+<createdTime>2025-05-27 00:06:42 UTC</createdTime>
+<ownerDesignName>modelagem_java</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="senha_usuario" id="DE5D46D4-84E0-C60D-46B0-10B6EDD44CA6">
+<createdBy>vitor</createdBy>
+<createdTime>2025-05-27 00:07:08 UTC</createdTime>
+<ownerDesignName>modelagem_java</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cpf_usuario" id="E7A175FE-CFC1-1BF5-F26F-747455BA5106">
+<createdBy>vitor</createdBy>
+<createdTime>2025-05-27 00:09:27 UTC</createdTime>
+<ownerDesignName>modelagem_java</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="telefone_usuario" id="2D02A960-361B-46C3-3FEE-56A554CE9D20">
+<createdBy>vitor</createdBy>
+<createdTime>2025-05-27 00:09:36 UTC</createdTime>
+<ownerDesignName>modelagem_java</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_nascimento_usuario" id="09FE0432-D7BA-6A16-EC8D-F02837180BBE">
+<createdBy>vitor</createdBy>
+<createdTime>2025-05-27 00:06:42 UTC</createdTime>
+<ownerDesignName>modelagem_java</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>91229484-D19C-D458-8647-333C7FFE7B60</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_criacao_usuario" id="D8BC4F08-FDD3-F062-90B7-06A995B2DFFD">
+<createdBy>vitor</createdBy>
+<createdTime>2025-05-27 00:08:44 UTC</createdTime>
+<ownerDesignName>modelagem_java</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>91229484-D19C-D458-8647-333C7FFE7B60</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2044B040-6FB5-8839-D93B-6CCA3DC9D981" name="tb_usuario_id_usuario_pk">
+<createdBy>vitor</createdBy>
+<createdTime>2025-05-27 00:06:19 UTC</createdTime>
+<ownerDesignName>modelagem_java</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="74A4BBF3-979F-FB93-0B5F-3CDC86010597"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

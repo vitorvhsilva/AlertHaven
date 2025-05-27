@@ -1,0 +1,68 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F2056DC0-2DDF-4425-FA6F-94484C4959AD" name="TB_ABRIGO">
+<createdBy>vitor</createdBy>
+<createdTime>2025-05-26 23:56:23 UTC</createdTime>
+<ownerDesignName>modelagem_java</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_abrigo" id="95270C9C-842D-35FB-0ED4-34E3887FCE39">
+<createdBy>vitor</createdBy>
+<createdTime>2025-05-26 23:56:44 UTC</createdTime>
+<ownerDesignName>modelagem_java</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nome_abrigo" id="D8DEB4D1-1886-9CF1-561B-C4CAF11BCAE4">
+<createdBy>vitor</createdBy>
+<createdTime>2025-05-26 23:56:59 UTC</createdTime>
+<ownerDesignName>modelagem_java</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="capacidade_suportada_abrigo" id="07688227-F385-9F44-DDCC-0A74936B2AFE">
+<createdBy>vitor</createdBy>
+<createdTime>2025-05-26 23:57:42 UTC</createdTime>
+<ownerDesignName>modelagem_java</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email_abrigo" id="C957FDE5-4908-987D-FF18-6497F9F47D9B">
+<createdBy>vitor</createdBy>
+<createdTime>2025-05-26 23:58:18 UTC</createdTime>
+<ownerDesignName>modelagem_java</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E1879252-1D1C-3B35-27EA-13005CC1A91C" name="tb_abrigo_id_abrigo_pk">
+<createdBy>vitor</createdBy>
+<createdTime>2025-05-26 23:56:44 UTC</createdTime>
+<ownerDesignName>modelagem_java</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="95270C9C-842D-35FB-0ED4-34E3887FCE39"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

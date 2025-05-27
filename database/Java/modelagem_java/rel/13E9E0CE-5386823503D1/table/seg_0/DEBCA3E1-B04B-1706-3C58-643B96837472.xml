@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DEBCA3E1-B04B-1706-3C58-643B96837472" name="TB_ABRIGO_TIPO_EMERGENCIA">
+<createdBy>vitor</createdBy>
+<createdTime>2025-05-27 00:00:15 UTC</createdTime>
+<ownerDesignName>modelagem_java</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_abrigo" id="C65904C8-4DE7-6986-7ECD-348ACE7B9782">
+<createdBy>vitor</createdBy>
+<createdTime>2025-05-27 00:00:36 UTC</createdTime>
+<ownerDesignName>modelagem_java</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="997CC272-8E58-95EB-B7CF-2AE4407AD545" referredColumn="95270C9C-842D-35FB-0ED4-34E3887FCE39"/>
+</associations>
+</Column>
+<Column name="id_tipo_emergencia" id="1942FE41-2226-CE29-8C44-FE58583E92BA">
+<createdBy>vitor</createdBy>
+<createdTime>2025-05-27 00:00:39 UTC</createdTime>
+<ownerDesignName>modelagem_java</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D689E338-E1BD-163E-C902-0E00D1FE4B17" referredColumn="8F55089D-F93E-3AB0-A3BA-8714E58668A7"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1EE5548D-88DB-5E96-3D43-AD4BD7A51A08" name="tb_abrigo_tpem_id_abrigo_fk">
+<createdBy>vitor</createdBy>
+<createdTime>2025-05-27 00:00:36 UTC</createdTime>
+<ownerDesignName>modelagem_java</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C65904C8-4DE7-6986-7ECD-348ACE7B9782"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="64D27784-ACB1-15F9-801B-9D715A904A0D" name="tb_abrigo_tpem_id_tipo_emergencia_fk">
+<createdBy>vitor</createdBy>
+<createdTime>2025-05-27 00:00:39 UTC</createdTime>
+<ownerDesignName>modelagem_java</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1942FE41-2226-CE29-8C44-FE58583E92BA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

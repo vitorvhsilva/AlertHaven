@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="997CC272-8E58-95EB-B7CF-2AE4407AD545" containerWithKeyObject="DEBCA3E1-B04B-1706-3C58-643B96837472" localFKIndex="1EE5548D-88DB-5E96-3D43-AD4BD7A51A08" name="tb_abrigo_tpem_id_abrigo_fk">
+<createdBy>vitor</createdBy>
+<createdTime>2025-05-27 00:00:36 UTC</createdTime>
+<ownerDesignName>modelagem_java</ownerDesignName>
+<referredTableLongName>TB_ABRIGO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>F2056DC0-2DDF-4425-FA6F-94484C4959AD</referredTableID>
+<keyObject>E1879252-1D1C-3B35-27EA-13005CC1A91C</keyObject>
+<referredKeyID>E1879252-1D1C-3B35-27EA-13005CC1A91C</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_abrigo</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

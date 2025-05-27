@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F00D8CFE-C5DF-49FD-A711-3A3633535607" name="TB_LOCALIZACAO">
+<createdBy>vitor</createdBy>
+<createdTime>2025-05-27 00:01:18 UTC</createdTime>
+<ownerDesignName>modelagem_java</ownerDesignName>
+<ordsAlias>table_5</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_abrigo" id="C16166E2-0283-304B-E1E4-9D1F1147F2F7">
+<createdBy>vitor</createdBy>
+<createdTime>2025-05-27 00:01:37 UTC</createdTime>
+<ownerDesignName>modelagem_java</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="014D4C5D-BB4F-0DA2-7CCC-CF913A539901" referredColumn="95270C9C-842D-35FB-0ED4-34E3887FCE39"/>
+</associations>
+</Column>
+<Column name="identificao_unica_abrigo" id="F2BB0B7C-B562-D572-7AF5-CF20A2A0F93F">
+<createdBy>vitor</createdBy>
+<createdTime>2025-05-27 00:02:15 UTC</createdTime>
+<ownerDesignName>modelagem_java</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="latitude_abrigo" id="B2C21EC7-6035-744B-E254-936D60BF7FD7">
+<createdBy>vitor</createdBy>
+<createdTime>2025-05-27 00:02:29 UTC</createdTime>
+<ownerDesignName>modelagem_java</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="longitude_abrigo" id="3B66B4FF-61D0-8518-6A04-66B42C54C082">
+<createdBy>vitor</createdBy>
+<createdTime>2025-05-27 00:02:39 UTC</createdTime>
+<ownerDesignName>modelagem_java</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="rua_abrigo" id="D06E6C32-85C9-2803-4EB1-2B4300054838">
+<createdBy>vitor</createdBy>
+<createdTime>2025-05-27 00:03:03 UTC</createdTime>
+<ownerDesignName>modelagem_java</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F9F72A53-3C2C-273B-2A5F-5E4796B4CC9A" name="tb_localizacao_id_abrigo_pk">
+<createdBy>vitor</createdBy>
+<createdTime>2025-05-27 00:01:42 UTC</createdTime>
+<ownerDesignName>modelagem_java</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C16166E2-0283-304B-E1E4-9D1F1147F2F7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="11EE34E2-15B7-955E-A812-8FF7EF1B240A" name="tb_localizacao_id_abrigo_fk">
+<createdBy>vitor</createdBy>
+<createdTime>2025-05-27 00:01:37 UTC</createdTime>
+<ownerDesignName>modelagem_java</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C16166E2-0283-304B-E1E4-9D1F1147F2F7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
