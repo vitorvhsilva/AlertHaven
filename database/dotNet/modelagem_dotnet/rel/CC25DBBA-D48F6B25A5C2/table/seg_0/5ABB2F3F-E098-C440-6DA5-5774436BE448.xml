@@ -30,9 +30,20 @@
 <ownDataTypeParameters>255,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="localizacao_iot" id="52F1EACA-06EB-9B86-2EE9-82E7C2E649A4">
+<Column name="latitude_iot" id="52F1EACA-06EB-9B86-2EE9-82E7C2E649A4">
 <createdBy>vitor</createdBy>
 <createdTime>2025-05-26 23:41:22 UTC</createdTime>
+<ownerDesignName>modelagem_dotnet</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="longitude_iot" id="1641FB8E-115C-FF81-61CA-6C84C95432D9">
+<createdBy>vitor</createdBy>
+<createdTime>2025-05-27 02:43:57 UTC</createdTime>
 <ownerDesignName>modelagem_dotnet</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
