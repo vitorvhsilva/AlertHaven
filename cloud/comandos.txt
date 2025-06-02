@@ -1,0 +1,74 @@
+BUILD DOCKERFILE
+
+docker build -t abrigo-service .
+docker tag abrigo-service vitorvhsilva/abrigo-service:latest
+docker push vitorvhsilva/abrigo-service:latest
+
+
+
+
+
+
+RODAR SCRIPT
+
+chmod 774 cria_vm.sh
+./cria_vm.sh
+
+CONECTAR VM
+
+9.169.166.37
+ssh vitorvhsilva@
+Fiap2TDSPY@2025
+
+
+
+
+
+
+CONFIGURAR VM
+
+// atualiza e instala dependências basicas
+sudo apt update && sudo apt install -y ca-certificates curl
+ 
+// baixa e executa o script de instalação automática do Docker
+curl -fsSL https://get.docker.com | sudo sh
+ 
+// adiciona usuário ao grupo do docker
+sudo usermod -aG docker vitorvhsilva && newgrp docker
+ 
+//testar Docker 
+docker run hello-world
+ 
+//imagem Abrigo
+docker pull vitorvhsilva/abrigo-service
+
+
+
+
+
+
+
+
+
+
+CRIAR REDE
+
+docker network create alerthaven-net
+
+RODAR BANCO DE DADOS
+
+docker run -d --name bd-postgres --network alerthaven-net -p 5432:5432 -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=root -e POSTGRES_DB=postgres -v pgdata:/var/lib/postgresql/data postgres:15
+
+
+RODAR ABRIGO SERVICE
+
+docker pull vitorvhsilva/abrigo-service
+
+docker run -d --name abrigo-service --network alerthaven-net -p 8080:8080 -e SPRING_DATASOURCE_URL=jdbc:postgresql://bd-postgres:5432/postgres -e SPRING_DATASOURCE_USERNAME=postgres -e SPRING_DATASOURCE_PASSWORD=root vitorvhsilva/abrigo-service
+
+LOGS
+ 
+docker logs -f abrigo-service
+docker logs -f bd-postgres
+
+ 

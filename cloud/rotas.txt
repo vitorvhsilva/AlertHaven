@@ -1,0 +1,16 @@
+Cadastrar Usuário
+POST -> http://{ip_publico}:8080/usuarios
+BODY -> criar_usuario.json
+
+Pegar Usuários
+GET -> http://{ip_publico}:8080/usuarios
+
+Pegar Usuário Por Id
+GET -> http://{ip_publico}:8080/usuarios/{id_usuario}
+
+Atualizar Usuário
+PUT -> http://{ip_publico}:8080/usuarios/{id_usuario}
+BODY -> atualizar_usuario.json
+
+Deletar Usuário
+DELETE -> http://{ip_publico}:8080/usuarios/{id_usuario}
