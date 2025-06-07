@@ -1,5 +1,4 @@
---Função para Calcular Capacidade Média dos Abrigos por Tipo de Emergência
-
+--Fun??o para Calcular Capacidade Media dos Abrigos por Tipo de Emerg?ncia
 CREATE OR REPLACE FUNCTION fn_capacidade_media_por_emergencia(
     p_tipo_emergencia IN VARCHAR2
 ) RETURN NUMBER
@@ -18,12 +17,29 @@ EXCEPTION
     WHEN NO_DATA_FOUND THEN
         RETURN 0;
     WHEN OTHERS THEN
-        DBMS_OUTPUT.PUT_LINE('Erro ao calcular capacidade média: ' || SQLERRM);
+        DBMS_OUTPUT.PUT_LINE('Erro ao calcular capacidade m?dia: ' || SQLERRM);
         RETURN NULL;
 END;
 /
+-- Bloco sql para teste da funcao de calcular a capacidade m?dia
+DECLARE
+    v_tipo_emergencia VARCHAR2(100) := 'Furac?o'; -- Substitua pelo tipo de emerg?ncia desejado
+    v_capacidade_media NUMBER;
+BEGIN
+    -- Chamar a fun??o e armazenar o resultado
+    v_capacidade_media := fn_capacidade_media_por_emergencia(p_tipo_emergencia => v_tipo_emergencia);
+    
+    -- Exibir o resultado
+    DBMS_OUTPUT.PUT_LINE('Capacidade m?dia para emerg?ncias do tipo ' || 
+                         v_tipo_emergencia || ': ' || 
+                         v_capacidade_media || ' pessoas');
+EXCEPTION
+    WHEN OTHERS THEN
+        DBMS_OUTPUT.PUT_LINE('Erro ao executar a fun??o: ' || SQLERRM);
+END;
+/
 
--- Função para Verificar Disponibilidade de Vagas em Abrigos
+-- Funcao para Verificar Disponibilidade de Vagas em Abrigos
 
 CREATE OR REPLACE FUNCTION fn_vagas_disponiveis_abrigo(
     p_id_abrigo IN VARCHAR2
@@ -45,27 +61,35 @@ BEGIN
     END IF;
     
     IF v_capacidade IS NULL THEN
-        RETURN 'Capacidade não informada';
+        RETURN 'Capacidade n?o informada';
     ELSIF (v_capacidade - v_vagas_ocupadas) <= 0 THEN
         RETURN 'Lotado';
     ELSIF (v_capacidade - v_vagas_ocupadas) < (v_capacidade * 0.2) THEN
         RETURN 'Quase lotado - ' || (v_capacidade - v_vagas_ocupadas) || ' vagas';
     ELSE
-        RETURN 'Disponível - ' || (v_capacidade - v_vagas_ocupadas) || ' vagas';
+        RETURN 'Dispon?vel - ' || (v_capacidade - v_vagas_ocupadas) || ' vagas';
     END IF;
 EXCEPTION
     WHEN NO_DATA_FOUND THEN
-        RETURN 'Abrigo não encontrado';
+        RETURN 'Abrigo n?o encontrado';
     WHEN OTHERS THEN
         RETURN 'Erro ao verificar disponibilidade: ' || SUBSTR(SQLERRM, 1, 100);
 END;
 /
 
+-- Bloco para testar a funcao de verificacao de disponibilidade
+DECLARE
+    v_id_abrigo VARCHAR2(100) := 'ABR-20250606-Pvw'; -- Substitua pelo ID do abrigo desejado
+    v_resultado VARCHAR2(200);
+BEGIN
+    -- Chamar a fun??o e armazenar o resultado
+    v_resultado := fn_vagas_disponiveis_abrigo(p_id_abrigo => v_id_abrigo);
+    
+    -- Exibir o resultado
+    DBMS_OUTPUT.PUT_LINE('Status do abrigo ' || v_id_abrigo || ': ' || v_resultado);
+EXCEPTION
+    WHEN OTHERS THEN
+        DBMS_OUTPUT.PUT_LINE('Erro ao executar o bloco: ' || SQLERRM);
+END;
+/
 
-SELECT 
-    a.id_abrigo,
-    a.nome_abrigo,
-    a.capacidade_suportada_abrigo,
-    fn_vagas_disponiveis_abrigo(a.id_abrigo) as disponibilidade
-FROM 
-    TB_ABRIGO a;
